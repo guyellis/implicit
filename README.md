@@ -1,0 +1,2 @@
+# implicit
+Syntax checking helper
