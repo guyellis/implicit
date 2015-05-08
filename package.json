@@ -1,0 +1,65 @@
+{
+  "name": "implicit",
+  "version": "0.0.1",
+  "author": "Guy Ellis <wildfiction@gmail.com>",
+  "description": "Syntax checking helper",
+  "bin": {
+    "implicit": "./bin/implicit.js"
+  },
+  "main": "./bin/implicit.js",
+  "public": true,
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "scripts": {
+    "pre-commit-update": "node_modules/.bin/npm-update-outdated",
+    "test": "node_modules/.bin/mocha --recursive",
+    "posttest": "node_modules/.bin/eslint .",
+    "lint": "node_modules/.bin/eslint .",
+    "check-coverage": "node_modules/.bin/istanbul check-coverage --statements 10 --branches 10 --functions 10 --lines 10 ./coverage/coverage.json",
+    "coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
+    "pre-commit-stash-save": "git stash --keep-index",
+    "post-commit-stash-pop": "git stash pop"
+  },
+  "pre-commit": [
+    "pre-commit-update",
+    "lint",
+    "pre-commit-stash-save",
+    "coverage",
+    "post-commit-stash-pop",
+    "check-coverage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guyellis/implicit.git"
+  },
+  "dependencies": {
+    "async": "1.4.2",
+    "debug": "2.2.0",
+    "lodash": "3.10.1",
+    "match-files": "0.1.1",
+    "minimist": "1.2.0",
+    "typescript": "1.4.1",
+    "walker": "1.0.7"
+  },
+  "bugs": {
+    "url": "https://github.com/guyellis/implicit/issues"
+  },
+  "homepage": "https://github.com/guyellis/implicit",
+  "devDependencies": {
+    "eslint": "^1.0.0",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4",
+    "npm-update-outdated": "^0.1.4",
+    "pre-commit": "^1.0.6"
+  },
+  "keywords": [
+    "syntax",
+    "javascript",
+    "ecmascript"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
