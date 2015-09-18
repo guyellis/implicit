@@ -1,6 +1,6 @@
 {
   "name": "implicit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Guy Ellis <wildfiction@gmail.com>",
   "description": "Syntax checking helper",
   "bin": {
