@@ -1,5 +1,7 @@
 # implicit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/guyellis/implicit.svg)](https://greenkeeper.io/)
+
 ## JavaScript Syntax Check Helper
 
 Implicit checks your JavaScript code and reports on potential errors with
