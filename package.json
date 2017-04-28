@@ -34,12 +34,12 @@
     "url": "https://github.com/guyellis/implicit.git"
   },
   "dependencies": {
-    "async": "1.4.2",
-    "debug": "2.2.0",
-    "lodash": "3.10.1",
+    "async": "2.3.0",
+    "debug": "2.6.6",
+    "lodash": "4.17.4",
     "match-files": "0.1.1",
     "minimist": "1.2.0",
-    "typescript": "1.4.1",
+    "typescript": "2.3.2",
     "walker": "1.0.7"
   },
   "bugs": {
@@ -47,9 +47,9 @@
   },
   "homepage": "https://github.com/guyellis/implicit",
   "devDependencies": {
-    "eslint": "^1.0.0",
-    "istanbul": "^0.3.13",
-    "mocha": "^2.2.4",
+    "eslint": "^3.19.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0",
     "npm-update-outdated": "^0.1.4",
     "pre-commit": "^1.0.6"
   },
